@@ -1,0 +1,30 @@
+let nftCollection = [];
+
+function createNFT(title, details, imageLink) {
+    const nftItem = {
+        title: title,
+        details: details,
+        imageLink: imageLink
+    };
+    nftCollection.push(nftItem);
+}
+
+function displayNFTs() {
+    for (let i = 0; i < nftCollection.length; i++) {
+        console.log(Title: ${nftCollection[i].title});
+        console.log(Details: ${nftCollection[i].details});
+        console.log(Image Link: ${nftCollection[i].imageLink});
+    }
+}
+
+function getTotalNFTs() {
+    return nftCollection.length;
+}
+
+createNFT("CryptoPunk #1", "A unique CryptoPunk", "https://www.larvalabs.com/public/images/cryptopunks/punk7804.png");
+createNFT("Bored Ape Yacht Club #2", "Bored Ape Yacht Club - Ape #2", "https://i.seadn.io/gae/DpiW5oQSKP0TpuER54Sx5TxZsEbTHi7D3CizZnRmOS6YIgoUgJbmcmqgLb1B-vItZar24rMrj6UdzG5Az1m5vFg6mUNVhIikUKIc?w=500&auto=format");
+createNFT("Art Blocks #3", "Chromie Squiggle #3 by Snowfro", "https://i.seadn.io/gae/2lWnq4XXP32ubU9MMII44rpRe_SUlVnl0T16ne-VZ-QjMwXUAmV4B5NVN9y7sqVAG3uMcC_fbhXJ3m41SH7iQML0tns0J70sB6LGTg?w=500&auto=format");
+createNFT("Cool Cat #4", "Cool Cat #4", "https://i.seadn.io/gae/8oIuw3-t5FIkBo-NEKz5tovrXEn0FxrWeNhwD24BPxPdiTei3ldw6ZHpVmjQfW0mIYipgA6yFNqlYKN9FVDB5jKXLlbmX35W5oS4?w=500&auto=format");
+createNFT("World of Women #5", "World of Women #5", "https://i.seadn.io/gae/PLFX_bZ-8tWh_ogdJESWw7mCpF1tqFk-OpFCpE4sxnAYAF94i5NhINuTLCYVtTyeSUpBYhPbX3dsK3GdQfrkl2He60hT3pdP_3T6Zg?w=500&auto=format");
+displayNFTs();
+console.log("Total NFTs: " + getTotalNFTs());
